@@ -187,7 +187,7 @@ class StackSentinelClient(object):
         if dry_run:
             return send_error_args
         else:
-            self.send_error(**send_error_args)
+            return self.send_error(**send_error_args)
 
     def _get_sys_info(self):
         sys_info = {
